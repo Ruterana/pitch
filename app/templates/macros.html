@@ -1,0 +1,39 @@
+{% macro displayCategoryList(category_list) %}
+{% for category in category_list%}
+
+<div>
+    <a href="{{url_for('main.category',id=category.id)}}">
+        <p>{{category.cat_name|upper}}</p>
+    </a>
+</div>
+{% endfor %} -->
+{% endmacro %}
+
+{% macro display(piches) %}
+<div class="container-fluid">
+    <div class="row">
+        {% if piches %}
+        {% for category in piches %}
+        <div class="col-md-4">
+            <div class="thumbnail" id="carded">
+                
+                <div class="card-body text-center">
+                    <p>{{category.post}}</p>
+                    <p class="text-center">Category: {{category.category}}</p>
+                    <p>description:{{category.description}}</p>
+                    <footer class="blockquote-footer text-center" style="color:chocolate"> Posted by:
+                        {{category.users.username}}</footer><br>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endfor %}
+{% endif %}
+
+
+{% endmacro %}

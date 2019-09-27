@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+{% block content %}
+<div class="container" id="particles-js">
+
+    <ul class="nav nav-pills nav-justified nav-fill" role="tablist">
+        <li class="nav-item">
+            <a id="cats" class="nav-link" data-toggle="tab" href="#love" style="color: #660000   "><strong>love</strong></a><br>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="cats" data-toggle="tab" href="#product" style="color:#660000  "><strong>product</strong></a><br>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="cats" data-toggle="tab" href="#motivation" style="color:#660000    "><strong>motivation</strong></a><br>
+        </li>
+
+
+    </ul>
+    <hr>
+    <br>
+    <h1 style="color:#660000 ;text-align:center ">welcome to pitch app </h1>
+    <h5>This is an application that allows a user to post a pitch depending on a certain category 
+        category. A user can also be able to comment and vote on another user's pitches. </h5>
+    
+        <div id="love">
+            {{macro.display(love)}}
+        </div>
+        <hr>
+        <div id="product">
+            {{macro.display(product)}}
+        </div>
+        <hr>
+        <div  id="motivation">
+            {{macro.display(motivation)}}
+        </div>
+
+
+    <!-- </div> -->
+
+</div>
+{% endblock %}
