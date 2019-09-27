@@ -1,6 +1,6 @@
 
 ## project name
-pitches
+pitche
 
 ## project Description
 A web application that lets users submit pitches based on certain  categories
