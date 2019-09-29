@@ -5,7 +5,6 @@ pitche
 ## project Description
 A web application that lets users submit pitches based on certain  categories
 ## Installation Requirements
-* sudo add-apt-repository ppa:jonathonf/python-3.6
 * sudo apt-get update
 * sudo apt-get install python3.6
 * sudo apt-get install python3-pip
